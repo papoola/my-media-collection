@@ -57,8 +57,6 @@ export default function EditBook({
       <div className="card p-6">
         <h1 className="text-2xl font-bold mb-6">{title}</h1>
         
-        {JSON.stringify(formData)}
-        
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 

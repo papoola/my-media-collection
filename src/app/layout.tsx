@@ -4,6 +4,8 @@ import "./globals.css";
 import NavButton from "@/components/NavButton";
 import ConfirmationDialog from "@/components/ConfirmationDialog";
 import { ConfirmationProvider } from "@/contexts/ConfirmationContext";
+import { ThemeProvider } from "@/contexts/ThemeContext";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,7 +42,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <head>
@@ -49,20 +50,25 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased pb-32`}
       >
-        <ConfirmationProvider>
-          <div className="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-gray-100 border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
-            <div className="grid h-full max-w-lg grid-cols-4 mx-auto">
-              <NavButton label="Home" icon="fa-house" path="/" />
-              <NavButton label="Movies" icon="fa-film" path="/movies" />
-              <NavButton label="Series" icon="fa-tv" path="/series" />
-              <NavButton label="Books" icon="fa-book-open" path="/books" />
-            </div>
-          </div>
+        <ThemeProvider>
+          <ConfirmationProvider>
 
-          <ConfirmationDialog />
+            <ThemeToggle />
+
+            <div className="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-gray-100 border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600">
+              <div className="grid h-full max-w-lg grid-cols-4 mx-auto">
+                <NavButton label="Home" icon="fa-house" path="/" />
+                <NavButton label="Movies" icon="fa-film" path="/movies" />
+                <NavButton label="Series" icon="fa-tv" path="/series" />
+                <NavButton label="Books" icon="fa-book-open" path="/books" />
+              </div>
+            </div>
+
+            <ConfirmationDialog />
     
-          {children}
-        </ConfirmationProvider>
+            {children}
+          </ConfirmationProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -88,11 +88,11 @@ export default function MovieDetailPage() {
               <img
                 src={movie.poster}
                 alt={`${movie.title} poster`}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover bg-gray-200 text-gray-400 dark:bg-gray-700"
               />
             ) : (
-              <div className="bg-gray-200 h-64 flex items-center justify-center">
-                <i className="fa-solid fa-film text-gray-400 text-6xl"></i>
+              <div className="bg-gray-200 h-64 flex items-center justify-center text-gray-400 dark:bg-gray-700">
+                <i className="fa-solid fa-film text-6xl"></i>
               </div>
             )}
           </div>

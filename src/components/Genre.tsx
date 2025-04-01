@@ -12,7 +12,7 @@ export default function Genre({ genre, className = '', onRemove }: Props) {
             {genre.map((genre, index) => (
                 <span 
                     key={index} 
-                    className={`px-3 py-1 bg-gray-100 rounded-full text-sm flex items-center ${onRemove ? 'pr-2' : ''}`}
+                    className={`px-3 py-1 bg-gray-100 rounded-full text-sm flex items-center ${onRemove ? 'pr-2' : ''} dark:bg-gray-700`}
                 >
                     {genre}
                     {onRemove && (

@@ -46,7 +46,7 @@ export default function GenreInput({
 
   return (
     <div className={className}>
-      <label className="block text-gray-700 font-bold mb-2" htmlFor={id}>
+      <label className="label" htmlFor={id}>
         {label}
         {required && <span className="text-red-500 ml-1">*</span>}
       </label>

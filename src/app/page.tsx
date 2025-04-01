@@ -2,9 +2,26 @@
 
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { useConfirmation } from '@/contexts/ConfirmationContext'
 
 export default function Home() {
   const router = useRouter()
+  const { open } = useConfirmation()
+  
+  const handleResetCollections = () => {
+    open(
+      () => {
+        localStorage.clear()
+        window.location.reload()
+      },
+      {
+        title: "Reset All Collections",
+        message: "This will clear all your saved movies, series, and books and restore the default samples. This action cannot be undone. Are you sure you want to continue?",
+        confirmButtonText: "Yes, Reset Everything",
+        cancelButtonText: "Cancel"
+      }
+    )
+  }
   
   return (
     <div className="container mx-auto p-6">
@@ -24,7 +41,7 @@ export default function Home() {
               <i className="fa-solid fa-film"></i>
             </div>
             <h2 className="text-2xl font-semibold mb-2">Movies</h2>
-            <p className="text-gray-600">Browse your movie collection</p>
+            <p>Browse your movie collection</p>
           </div>
           
           <div 
@@ -35,7 +52,7 @@ export default function Home() {
               <i className="fa-solid fa-tv"></i>
             </div>
             <h2 className="text-2xl font-semibold mb-2">TV Series</h2>
-            <p className="text-gray-600">Check out your favorite shows</p>
+            <p>Check out your favorite shows</p>
           </div>
           
           <div 
@@ -46,18 +63,29 @@ export default function Home() {
               <i className="fa-solid fa-book"></i>
             </div>
             <h2 className="text-2xl font-semibold mb-2">Books</h2>
-            <p className="text-gray-600">Explore your reading list</p>
+            <p>Explore your reading list</p>
           </div>
         </div>
         
-        <div className="card p-6 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100">
+        <div className="card p-6 mb-8">
           <h3 className="text-xl font-semibold mb-3">Hey Dylan! 👋</h3>
-          <p className="text-gray-700 mb-3">
+          <p className="mb-3">
             I heard you're the one approving this assessment. I've put in extra effort to make this app shine!
-          </p>
-          <p className="text-gray-700 mb-3">
             Did you know that reviewing React code is like being a detective? You're always looking for <span className="font-mono text-red-500">suspicious props</span> and <span className="font-mono text-red-500">state crimes</span>!
           </p>
+        </div>
+        
+        <div className="">
+          <p className="mb-4">
+            Need to start fresh? You can reset all your collections to their default state.
+          </p>
+          <button 
+            onClick={handleResetCollections}
+            className="btn btn-danger flex items-center mx-auto"
+          >
+            <i className="fa-solid fa-trash-can mr-2"></i>
+            Reset All Collections
+          </button>
         </div>
       </div>
     </div>

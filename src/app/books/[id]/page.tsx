@@ -88,11 +88,11 @@ export default function BookDetailPage() {
               <img
                 src={book.poster}
                 alt={`${book.title} cover`}
-                className="w-full h-auto object-contain bg-gray-100"
+                className="w-full h-auto object-contain bg-gray-200 text-gray-400 dark:bg-gray-700"
               />
             ) : (
-              <div className="bg-gray-200 h-64 flex items-center justify-center">
-                <i className="fa-solid fa-book text-gray-400 text-6xl"></i>
+              <div className="bg-gray-200 h-64 flex items-center justify-center text-gray-400 dark:bg-gray-700">
+                <i className="fa-solid fa-book text-6xl"></i>
               </div>
             )}
           </div>

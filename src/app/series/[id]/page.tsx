@@ -80,18 +80,18 @@ export default function SerieDetailPage() {
         </div>
       </div>
 
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="card">
         <div className="md:flex">
           <div className="md:w-1/3">
             {serie.poster ? (
               <img
                 src={serie.poster}
                 alt={`${serie.title} poster`}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover bg-gray-200 text-gray-400 dark:bg-gray-700"
               />
             ) : (
-              <div className="bg-gray-200 h-64 flex items-center justify-center">
-                <i className="fa-solid fa-tv text-gray-400 text-6xl"></i>
+              <div className="bg-gray-200 h-64 flex items-center justify-center text-gray-400 dark:bg-gray-700">
+                <i className="fa-solid fa-tv text-6xl"></i>
               </div>
             )}
           </div>

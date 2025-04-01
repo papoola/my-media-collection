@@ -12,7 +12,7 @@ export default function BooksPage() {
 
     function renderBook(book: Book): React.ReactNode {
         return (
-            <div 
+            <div
                 className="card cursor-pointer"
                 onClick={() => router.push(`/books/${book.id}`)}
             >
@@ -20,18 +20,18 @@ export default function BooksPage() {
                     <img
                         src={book.poster}
                         alt={`${book.title} poster`}
-                        className="w-full h-64 object-contain bg-gray-200"
+                        className="w-full h-64 object-contain bg-gray-200 text-gray-400 dark:bg-gray-700"
                     />
                 ) : (
-                    <div className="bg-gray-200 h-64 flex items-center justify-center">
-                        <i className="fa-solid fa-book text-gray-400 text-6xl"></i>
+                    <div className="bg-gray-200 h-64 flex items-center justify-center text-gray-400 dark:bg-gray-700">
+                        <i className="fa-solid fa-book text-6xl"></i>
                     </div>
                 )}
-            
+
                 <div className="p-4">
                     <h2 className="text-xl font-semibold mb-2 min-h-16">{book.title}</h2>
 
-                    <div className="flex justify-between mb-2 text-gray-600">
+                    <div className="flex justify-between mb-2">
                         <div className="flex items-center">
                             <span>{book.author}</span>
                         </div>

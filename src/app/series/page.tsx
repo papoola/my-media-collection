@@ -20,18 +20,18 @@ export default function SeriesPage() {
                     <img
                         src={serie.poster}
                         alt={`${serie.title} poster`}
-                        className="w-full h-64 object-cover"
+                        className="w-full h-64 object-cover bg-gray-200 text-gray-400 dark:bg-gray-700"
                     />
                 ) : (
-                    <div className="bg-gray-200 h-64 flex items-center justify-center">
-                        <i className="fa-solid fa-tv text-gray-400 text-6xl"></i>
+                    <div className="bg-gray-200 h-64 flex items-center justify-center text-gray-400 dark:bg-gray-700">
+                        <i className="fa-solid fa-tv text-6xl"></i>
                     </div>
                 )}
             
                 <div className="p-4">
                     <h2 className="text-xl font-semibold mb-2 min-h-16">{serie.title}</h2>
 
-                    <div className="flex justify-between mb-2 text-gray-600">
+                    <div className="flex justify-between mb-2">
                         <div className="flex items-center">
                             <i className="fa-solid fa-calendar-alt mr-2"></i>
                             <span>{serie.year}</span>
