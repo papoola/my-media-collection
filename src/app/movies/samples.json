@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Inception",
+        "year": 2010,        
+        "rating": 8.8,
+        "director": "Christopher Nolan",
+        "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+        "imdbUrl": "https://www.imdb.com/title/tt1375666",
+        "genre": ["Sci-Fi", "Action", "Thriller"],
+        "poster": "https://m.media-amazon.com/images/I/81UOFL9v79L._AC_UL960_QL65_.jpg"
+    },
+    {
+        "id": 2,
+        "title": "The Dark Knight",
+        "year": 2008,
+        "rating": 9.0,
+        "director": "Christopher Nolan",
+        "description": "When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.",
+        "imdbUrl": "https://www.imdb.com/title/tt0468569",
+        "genre": ["Action", "Crime", "Drama", "Thriller"],
+        "poster": "https://m.media-amazon.com/images/I/910PfAIYEhL._AC_UL960_QL65_.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Interstellar",
+        "year": 2014,        
+        "rating": 8.7,
+        "director": "Christopher Nolan",
+        "description": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+        "imdbUrl": "https://www.imdb.com/title/tt0816692",
+        "genre": ["Adventure", "Drama", "Sci-Fi"],
+        "poster": "https://m.media-amazon.com/images/I/91z+42G6iIL._AC_UL960_QL65_.jpg"
+    }
+]

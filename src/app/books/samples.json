@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "The Disappearance of the Universe",
+        "author": "Gary R. Renard",
+        "year": 2005,
+        "rating": 4.6,        
+        "genre": [
+            "Spirituality",
+            "Philosophy",
+            "Religion"
+        ],
+        "description": "The book is a spiritual autobiography that explores the author's journey of self-discovery and spiritual awakening. The book is a collection of 100 short stories that explore the author's experiences and thoughts on spirituality, philosophy, and religion.",
+        "bolUrl": "https://www.bol.com/nl/nl/p/the-disappearance-of-the-universe/1001004002352763/",
+        "poster": "https://media.s-bol.com/7jjN8qJQwy8/550x827.jpg"
+    },
+    {
+        "id": 2,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "year": 1960,
+        "rating": 4.8,        
+        "genre": [
+            "Fiction",
+            "Classic",
+            "Historical"
+        ],
+        "description": "The book is a coming-of-age story that explores the experiences of a young girl growing up in the South during the Great Depression. The book is a powerful exploration of the themes of racism, prejudice, and injustice, and is a classic of American literature.",
+        "bolUrl": "https://www.bol.com/nl/nl/p/to-kill-a-mockingbird/1001004000957827/",
+        "poster": "https://media.s-bol.com/BymzqnrRyAPn/12oX0G/518x840.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Don Quixote",
+        "author": "Miguel de Cervantes",
+        "year": 1615,
+        "rating": 4.7,        
+        "genre": [
+            "Fiction",
+            "Classic"
+        ],
+        "description": "The book is a classic work of literature that tells the story of Don Quixote, a man who dreams of becoming a knight and sets out on a journey to fulfill his dreams. The book is a powerful exploration of the themes of love, friendship, and adventure, and is a classic of Spanish literature.",
+        "bolUrl": "https://www.bol.com/nl/nl/p/pc-don-quixote/1001004001814014/",
+        "poster": "https://media.s-bol.com/BALxv4E1MgKx/o2kkZyk/547x840.jpg"
+    }
+]

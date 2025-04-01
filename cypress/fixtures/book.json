@@ -1,0 +1,24 @@
+{
+  "newBook": {
+    "id": 0,
+    "title": "New Book Title",
+    "author": "New Author",
+    "year": 2023,
+    "rating": 4.5,
+    "description": "This is a new book description.",
+    "bolUrl": "https://www.bol.com/new-book",
+    "poster": "https://example.com/new-poster.jpg",
+    "genre": ["Fiction", "Mystery"]
+  },
+  "updatedBook": {
+    "id": 1,
+    "title": "Updated Book Title",
+    "author": "Updated Author",
+    "year": 2024,
+    "rating": 4.8,
+    "description": "This is an updated book description.",
+    "bolUrl": "https://www.bol.com/updated-book",
+    "poster": "https://example.com/updated-poster.jpg",
+    "genre": ["Fiction", "Mystery", "Fantasy"]
+  }
+}

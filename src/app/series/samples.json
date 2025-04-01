@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Game of Thrones",
+        "year": 2011,
+        "rating": 9.0,
+        "imdbUrl": "https://www.imdb.com/title/tt0944947",
+        "genre": ["Crime", "Drama"],
+        "description": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNGZmOGQ0ZWEtYzVmNi00ODUzLWJjZDgtMjFkNGM0YzkzMmE0XkEyXkFqcGc@._V1_FMjpg_UY2000_.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Severance",
+        "year": 2022,
+        "rating": 8.7,
+        "imdbUrl": "https://www.imdb.com/title/tt11280740",
+        "genre": ["Drama", "Mystery", "Sci-Fi", "Thriller"],
+        "description": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZDI5YzJhODQtMzQyNy00YWNmLWIxMjUtNDBjNjA5YWRjMzExXkEyXkFqcGc@._V1_FMjpg_UY3000_.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Breaking Bad",
+        "year": 2008,
+        "rating": 9.5,
+        "imdbUrl": "https://www.imdb.com/title/tt0903747",
+        "genre": ["Tragedy", "Crime", "Drama", "Thriller"],
+        "description": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student to secure his family's future.",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg"
+    }
+]
