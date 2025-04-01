@@ -1,36 +1,163 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+        ███╗   ███╗██╗   ██╗    ███╗   ███╗███████╗██████╗ ██╗ █████╗           
+        ████╗ ████║╚██╗ ██╔╝    ████╗ ████║██╔════╝██╔══██╗██║██╔══██╗          
+        ██╔████╔██║ ╚████╔╝     ██╔████╔██║█████╗  ██║  ██║██║███████║          
+        ██║╚██╔╝██║  ╚██╔╝      ██║╚██╔╝██║██╔══╝  ██║  ██║██║██╔══██║          
+        ██║ ╚═╝ ██║   ██║       ██║ ╚═╝ ██║███████╗██████╔╝██║██║  ██║          
+        ╚═╝     ╚═╝   ╚═╝       ╚═╝     ╚═╝╚══════╝╚═════╝ ╚═╝╚═╝  ╚═╝          
+                                                                                
+ ██████╗ ██████╗ ██╗     ██╗     ███████╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗
+██╔════╝██╔═══██╗██║     ██║     ██╔════╝██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║
+██║     ██║   ██║██║     ██║     █████╗  ██║        ██║   ██║██║   ██║██╔██╗ ██║
+██║     ██║   ██║██║     ██║     ██╔══╝  ██║        ██║   ██║██║   ██║██║╚██╗██║
+╚██████╗╚██████╔╝███████╗███████╗███████╗╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║
+ ╚═════╝ ╚═════╝ ╚══════╝╚══════╝╚══════╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+
+
+# My Media Collection
+
+A Next.js application for managing your personal collections of books, movies, and TV series. Built with React, TypeScript, and Next.js.
+
+## Features
+
+- **Multiple Collections**: Manage books, movies, and TV series in separate collections
+- **Search & Filter**: Easily find items in your collections
+- **Responsive Design**: Works on desktop and mobile devices
+- **Persistent Storage**: Collections are saved in localStorage
+- **Type Safety**: Built with TypeScript for better developer experience
+
+## Tech Stack
+
+- **Framework**: Next.js 15
+- **UI**: React 19
+- **Styling**: Tailwind CSS
+- **Testing**: Jest and React Testing Library
+- **E2E Testing**: Cypress
+- **Type Checking**: TypeScript
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/papoola/my-media-collection.git
+cd my-media-collection
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Development
 
-## Learn More
+- **Start development server**:
+  ```bash
+  npm run dev
+  ```
+  Starts the development server with Turbopack for faster builds.
 
-To learn more about Next.js, take a look at the following resources:
+- **Build for production**:
+  ```bash
+  npm run build
+  ```
+  Creates an optimized production build.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Start production server**:
+  ```bash
+  npm run start
+  ```
+  Starts the application in production mode.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Lint code**:
+  ```bash
+  npm run lint
+  ```
+  Runs ESLint to check for code quality issues.
 
-## Deploy on Vercel
+### Testing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Run all tests**:
+  ```bash
+  npm test
+  ```
+  Runs all Jest tests once.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Watch mode**:
+  ```bash
+  npm run test:watch
+  ```
+  Runs tests in watch mode, re-running tests when files change.
+
+- **Coverage report**:
+  ```bash
+  npm run test:coverage
+  ```
+  Runs tests and generates a coverage report.
+
+- **Run specific test files**:
+  ```bash
+  npm test -- <filename>
+  ```
+  Example: `npm test -- useBooks.test.tsx`
+
+### E2E Testing
+
+- **Open Cypress**:
+  ```bash
+  npm run cypress
+  ```
+  Opens the Cypress Test Runner in interactive mode.
+
+- **Run Cypress headless**:
+  ```bash
+  npm run cypress:headless
+  ```
+  Runs Cypress tests in headless mode (useful for CI).
+
+## Project Structure
+
+- `/src/app/*` - Next.js app router pages
+- `/src/components/*` - Reusable React components
+- `/src/hooks/*` - Custom React hooks for data management
+- `/src/types/*` - TypeScript type definitions
+- `/src/__tests__/*` - Test files organized by type (components, hooks)
+
+## Data Management
+
+The application uses custom hooks for data management:
+
+- `useBooks()` - Manages the book collection
+- `useMovies()` - Manages the movie collection
+- `useSeries()` - Manages the TV series collection
+
+Each hook provides:
+- Loading state
+- CRUD operations
+- Persistent storage via localStorage
+
+## Testing
+
+The project includes comprehensive tests:
+
+- **Unit Tests**: For hooks and utility functions
+- **Component Tests**: For UI components
+- **Integration Tests**: For page functionality
+
+Run tests with `npm test` or `npm run test:watch` for development.
+
+## License
+
+[MIT](LICENSE)
